@@ -1,0 +1,119 @@
+.jiadian{
+     position: relative;
+    // overflow: hidden;
+    width:1240px;
+    height:615px;
+    margin:auto;
+    // margin-top: -20px;
+    // margin-bottom: 30px;
+    .dianshi{
+      position: absolute;
+    width:100%;
+    height:100%;
+    >a>div{
+        width:230px;
+        height:300px;
+        float: left;
+    }
+    >a img{
+        width: 100%;
+        height: 100%;
+    }
+    >a>div>span{
+        position:relative;
+        font-size: 18px;
+        left:40px;
+        top:50px;
+    }
+    >a:nth-child(n+10) div{
+        width:230px;
+        height:130px;
+    }
+    >a:nth-child(n+1) div{
+        margin-right:18px;
+        margin-bottom:9px;
+    }
+    >a:nth-child(n) div:hover{
+        // clear: both;
+        box-shadow: 0 0 3px red;
+        }
+    }
+  
+    .yingyin{
+    position: absolute;
+    width:100%;
+    height:100%;
+    display: none;
+    >a>div{
+        width:230px;
+        height:300px;
+        float: left;
+    }
+    >a:nth-child(n+10) div{
+        width:230px;
+        height:130px;
+    }
+    >a:nth-child(n+1) div{
+        margin-right:18px;
+        margin-bottom:10px;
+    }
+    }
+}
+section>label{
+    font-size: 18px;;
+    position: relative;
+    left:1350px;
+    top:-40px;
+   //  z-index:3333;
+}
+input{
+    display: none;
+}
+#zj2:checked,#zj2:hover{
+    ~ .jiadian .yingyin{
+    display:inline;
+     }
+    ~ .jiadian .dianshi{
+        display:none;
+   }
+}
+.fa-arrow-circle-o-right{
+    color:orange;
+    margin-left:140px;
+    margin-top:10px;
+}
+.dist{
+    position: relative;
+    width:1240px;
+    height:340px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:10px;
+    // border:solid;
+    .changci{
+        width: 234px;
+        height: 340px;
+    }
+    .animation{
+        width: 960px;
+        height: 340px;
+        position: absolute;
+        left:250px;
+        top:0;
+        // border:solid;
+        overflow: hidden;
+        &::after{
+            margin-top: -10px;
+            margin-left: 0px;
+            position: absolute;
+            width:1960px;
+            content:url('./img/10.png' )  url('./img/11.png' ) url('./img/12.png' ) url('./img/13.png' ) url('./img/11.png' )url('./img/10.png' ) url('./img/13.png' )   url('./img/12.png' ) ;
+            animation: anima 4s steps(2) infinite;
+        }
+    }
+  }
+  @keyframes anima{
+      to{
+          margin-left:-190%;
+      }
+  }

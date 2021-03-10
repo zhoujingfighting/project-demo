@@ -1,0 +1,76 @@
+.jiadian {
+  position: relative;
+  width: 1240px;
+  height: 615px;
+  margin: auto;
+}
+.jiadian .dianshi {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.jiadian .dianshi > a > div {
+  width: 230px;
+  height: 300px;
+  float: left;
+}
+.jiadian .dianshi > a > div > span {
+  position: relative;
+  font-size: 18px;
+  left: 40px;
+  top: 50px;
+}
+.jiadian .dianshi > a:nth-child(n+10) div {
+  width: 230px;
+  height: 130px;
+}
+.jiadian .dianshi > a:nth-child(n+1) div {
+  margin-right: 18px;
+  margin-bottom: 9px;
+}
+.jiadian .dianshi > a:nth-child(n) div:hover {
+  box-shadow: 0 0 3px red;
+}
+.jiadian .yingyin {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+.jiadian .yingyin > a > div {
+  width: 230px;
+  height: 300px;
+  float: left;
+}
+.jiadian .yingyin > a:nth-child(n+10) div {
+  width: 230px;
+  height: 130px;
+}
+.jiadian .yingyin > a:nth-child(n+1) div {
+  margin-right: 18px;
+  margin-bottom: 10px;
+}
+
+section > label {
+  font-size: 18px;
+  position: relative;
+  left: 1350px;
+  top: -40px;
+}
+
+input {
+  display: none;
+}
+
+#zj2:checked ~ .jiadian .yingyin, #zj2:hover ~ .jiadian .yingyin {
+  display: inline;
+}
+#zj2:checked ~ .jiadian .dianshi, #zj2:hover ~ .jiadian .dianshi {
+  display: none;
+}
+
+.fa-arrow-circle-o-right {
+  color: orange;
+  margin-left: 140px;
+  margin-top: 10px;
+}

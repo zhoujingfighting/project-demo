@@ -1,0 +1,41 @@
+.information {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.information > div.logoimg {
+  width: 57px;
+  height: 187px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.information > div.logoimg img {
+  width: 57px;
+  height: 57px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.information > div.wenzi {
+  height: 91;
+  width: 1183px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.information > div.wenzi p {
+  font-size: 12px;
+}
+
+.footer {
+  position: absolute;
+  bottom: -200px;
+  right: 400px;
+  color: #333333;
+  letter-spacing: 0.5em;
+  color: #e5e5e5;
+}

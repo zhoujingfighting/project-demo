@@ -1,0 +1,545 @@
+@import"iconfont.css";
+@import"common.css";
+@import"common1.css";
+*{
+  margin:0; 
+  /* box-shadow:0 0 1px red;      */
+  box-sizing: border-box;
+  cursor: pointer;
+  font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+} 
+body{
+  position: relative;
+}
+.header{
+ width:100%;
+ position:relative;
+ height:120px;
+ width:100%;
+ background-size: auto 120px;
+ background-repeat: no-repeat;
+ background-position: center;
+ background-image: url(https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/a2a9e6db5e3c5374301827435d8595c6.jpg?w=5120&h=240);
+}
+/* .header>img{
+    display:inline-block;
+     width:95px;
+     margin-left:calc(70%);
+} */
+div.headerlist{
+ position: relative;
+ height:40px;
+ /* width:1170px; */
+ background-color: #333333;
+ padding:11px;
+}
+a{
+ text-decoration: none;
+ /* 这里定义通用属性 */
+}
+div.headerlist a{
+ text-decoration:none;
+ color:#b0b0b0;
+}
+div.headerlist a:hover{
+ color:white;
+}
+div.headerlist>table{
+  /* border:solid 2px;  */
+ /* position: absolute; 用了块元素过后就不要用定位*/
+ border-collapse:collapse;
+ width:1240px;
+ font-size: 14px;
+ margin-left:auto;
+ margin-right:auto; 
+ margin-top:-2px;
+}
+div.headerlist>table td{
+  position:relative;
+ display:inline-block; 
+ margin-right: 10px;
+ /* border-right:0.1px gray solid; */
+  text-align:center;
+}
+div.headerlist>table td img{
+  width:75px;
+  height:75px;
+}
+div.headerlist>table td:nth-child(13){
+ margin-right:160px;
+}
+div.headerlist>table td:nth-child(16){
+margin-right:47px;
+/* border-right: none; */
+}
+div.headerlist>table td:nth-child(17){
+border-right: none;
+}
+div.headerlist>table td>img{
+   position:absolute;
+   left:0;
+   top:100%;
+   display:none;
+}
+div.headerlist>table td>a:hover ~ img{
+  display:inline;
+  z-index:4444;
+  /* transition5:1s; */
+}
+/* div分界线 */
+div.productlist{
+height:100px;
+width:1240px;
+margin-left: auto;
+margin-right: auto;
+/* border:solid;  */
+position:relative;
+}
+div.productlist>a img{
+position:absolute;
+width:54px;
+height:54px;
+right:1180px;
+top:5px;
+ /* border:solid;  */
+}
+div.productlist>a:first-child>img{
+  z-index:3333;
+}
+div.productlist>a:first-child>img:hover{
+  display:none;
+  z-index: -333;
+}
+div.productlist>table{
+position: relative;
+border-collapse: collapse;
+font-size: 16px;
+left:250px;
+top:30px;
+}
+div.productlist>table td {
+  display:inline;
+   /* border:2px solid;  */
+   padding:9px;
+}
+div.productlist>form>input:first-child{
+position: absolute;
+width:250px;
+ height:50px;
+ right:40px;
+ top:18px;
+
+}
+div.productlist>form>input:nth-child(2){
+position: absolute;
+ height:50px;
+ width:50px;
+ right:0px;
+ top:18px;
+}
+div.productlist a:hover{
+  color:orange;
+}
+.kuang{
+  /* float: left; */
+  width:10000px;
+  margin-left: -2130px;
+  margin-right: 1000px;
+  height:0;
+  /* border:solid; */
+  /* display: flex; */
+   position:absolute;
+  border-collapse: collapse;
+  top:68px;
+  z-index: 4444333;
+  background-color: white;
+  /* display: none; */
+
+  overflow: hidden;
+  
+}
+.zj:hover ~ .kuang{
+  /* transition:20s; */
+  display:inline;
+    height:230px;
+   /* transition:10s; */
+   transition:1s;
+}
+.kuang td{
+  position:relative;
+  /* border:solid; */
+  width:200px;
+  height:230px;
+  left:2000px;
+}
+.kuang td img{
+  position:relative;
+  left:0;
+  top:30px
+}
+.kuang td span{
+  position:absolute;
+  left:20px;
+  top:70px
+}
+/* div分割线 */
+div.productmenu{
+  /* border:solid;
+margin-top:0; */
+position: relative;
+width:1240px;
+height:460px;
+margin-left:auto;
+margin-right:auto;
+}
+div.productmenu>ul.ulmenu{
+position: relative;
+list-style-type: none;
+width:230px;
+height:100%;
+margin:0; 
+padding:10px 0 10px 0;
+background-color: rgba(105,101,101,.6);
+ /* background-color: #FFFFFF; */
+top:-480px;
+/* background: scroll; */
+ z-index: 23333; 
+}
+div.productmenu>ul.ulmenu>li{
+width:100%;
+height:10%;
+text-align: left;
+line-height: 46px;
+padding:0 0 0 30px;
+}
+div.productmenu>ul.ulmenu>li:hover{
+background-color: #ff6700;
+}
+div.productmenu>ul.ulmenu>li::after{
+content:'>';
+position: absolute;
+right:10px;
+}
+div.productmenu>ul.slider{
+  list-style-type: none;
+ position: relative;
+ margin:0;
+ padding:0;
+  width:1240px;;
+  height:100%;
+} 
+div>ul.slider>li{
+position:absolute;
+width:100%;
+height:100%;
+left:0px;
+top:0px;
+/* border:solid; */
+top:-20px;
+} 
+div>ul.slider>li>a>img{
+position:absolute;
+width:100%;
+height:100%;
+/* right:0%;
+top:0; */
+  z-index: 22;  
+display:none;
+}
+div.productmenu>input{
+position:relative;
+top:420px;
+/* display: contents; */
+left:1020px;
+ z-index:3333;
+}
+div.productmenu>ul>li>label:first-child{
+position:absolute;
+top:210px;
+ left:230px;
+ font-size: 30px;
+ width:40px;
+ height:70px;
+ padding-top: 20px;
+ text-align: center;
+}
+div.productmenu>ul>li>label:nth-child(2){
+position:absolute;
+top:210px;
+right:0px;
+font-size: 30px;
+width:40px;
+padding-top: 20px;
+height:70px;
+text-align: center;
+}
+label:hover{
+  background-color: gray;
+}
+div.productmenu>input:nth-child(1):checked ~ ul.slider>li:nth-child(1)>a>img,
+div.productmenu>input:nth-child(2):checked ~ ul.slider>li:nth-child(2)>a>img,
+div.productmenu>input:nth-child(3):checked ~ ul.slider>li:nth-child(3)>a>img,
+div.productmenu>input:nth-child(4):checked ~ ul.slider>li:nth-child(4)>a>img,
+div.productmenu>input:nth-child(5):checked ~ ul.slider>li:nth-child(5)>a>img,
+div.productmenu>input:nth-child(6):checked ~ ul.slider>li:nth-child(6)>a>img{
+ display:inline; 
+ transition:2s;
+}
+div.productmenu>input:nth-child(1):checked ~ ul.slider>li:nth-child(1)>label,
+div.productmenu>input:nth-child(2):checked ~ ul.slider>li:nth-child(2)>label,
+div.productmenu>input:nth-child(3):checked ~ ul.slider>li:nth-child(3)>label,
+div.productmenu>input:nth-child(4):checked ~ ul.slider>li:nth-child(4)>label,
+div.productmenu>input:nth-child(5):checked ~ ul.slider>li:nth-child(5)>label,
+div.productmenu>input:nth-child(6):checked ~ ul.slider>li:nth-child(6)>label{
+ z-index:23; 
+}
+div.productmenu>ul.ulmenu ul.attachedmenu1{
+  list-style-type:none;
+  height:460px;
+  width:1010px;
+  position:absolute;
+  top:0;
+  left:230px;
+  background-color: #fff;
+  display: none;
+}
+div.productmenu>ul.ulmenu ul.attachedmenu1>li{
+  position: relative;
+  display: inline-block;
+  width:200px;
+  height:50px;
+  margin:10px;
+  margin-top:15px;
+  /* display: none; */
+}
+div.productmenu>ul.ulmenu>li>ul.attachedmenu1 span{
+  position: relative;
+  bottom: 15px;
+}
+/* 这里只是写了个例子 */
+div.productmenu>ul.ulmenu>li:nth-child(1):hover>ul{
+    /* z-index: -3; */
+   display: inline-block;
+   z-index: -23333;
+}
+.attachedmenu1>li span:hover{
+  color:red;
+}
+/* div分割线  */
+div.sliderphone{
+  width:1240px;
+  height:170px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10PX;
+  margin-bottom: 28px;;
+}
+div.sliderphone>ul>li>a>img{
+  width:30px;
+  height:30px;
+  top:5px;
+  left:23px;
+  position:absolute;
+}
+div.sliderphone>ul>li>a{
+  position:relative;
+  width:100%;
+  height:100%;
+}
+div.sliderphone>ul>li>a>span{
+  position:absolute;
+  width:70px;
+  padding-top:40px;
+  color:white;
+  /* height:60px; */
+ /* vertical-align: bottom; */
+  /* top: 40px; */
+  left:7px;
+}
+div.sliderphone>ul{
+  background-color: #5F5750;
+  list-style-type: none;
+  width:240px;
+  height:170px;
+  margin:0;
+  padding:0;
+}
+div.sliderphone>ul>li{
+  COLOR:WHITE;
+  /* vertical-align: bottom; */
+  width:76px;
+  height:82px;
+  display:inline-block;
+}
+div.sliderphone>a>img{
+  height:170px;
+  width:316px;
+  position:relative;
+ left:254px;
+ top:-170px;
+ margin-right: 14px;
+}
+div.sliderphone>a>img:nth-child(n):hover{
+  box-shadow: 0 0 4px;
+  padding:1px;
+}
+/* 分割线 */
+section{
+  background-color: #f5f5f5;
+}
+h2{
+  width:1240px;
+  height:58px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 58px;
+  font-size: 22px;;
+}
+/* 分割线 */
+
+/* 转scss写法 */
+
+
+
+
+
+/* 分割线 */
+.img{
+  position:relative;
+  width:1240px;
+  height:120px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.img>img{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%
+}
+/* div分割线 */
+.phonelist{
+  position:relative;
+  width:1240px;
+  height:614px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
+.phonelist>ul{
+  list-style-type: none;
+  position: absolute;;
+  height:100%;
+  width:994px;
+  right:0;
+  top:0;
+  padding:0;
+}
+.phonelist>ul>li span{
+  position: relative;
+  display: block;
+  /* left:50px; */
+}
+/* 这个做法要注意 */
+.phonelist>ul>li>a>span:first-of-type{                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+    left:50px;
+    margin-bottom:-12px;
+}
+
+.phonelist>ul>li{
+  position: relative;
+  display: inline-block; 
+  height:300px;
+  width:234px;
+   margin-right:11px;
+   margin-bottom: 11px;
+  padding:20px 0px;
+  background-color: #fff;
+}
+.phonelist>ul>li:nth-child(n):hover{
+  box-shadow: 0 0 3px;
+  margin-top:1px;
+  margin-bottom:-1px;
+}
+.phonelist>ul>li img{
+  margin-left:20px; 
+}
+ /* .phonelist>ul>li>a>span{
+  display: inline-block;
+  margin-left: 50px;
+}  */
+#television{
+  width:1240px;
+  height:120px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
+.totalservice{
+  width:1240px;
+  margin:auto;
+  position:relative;
+}
+.service{
+  
+  font-size:16px;
+  border-collapse: collapse;
+  width:1240px;
+  height:74px;
+  margin:auto;
+  border-bottom: 1px solid gray;
+  margin-bottom: 20px;
+}
+.service td{
+  height:20px;
+  text-align: center;
+  /* margin-left: -100px; */
+  /* border-right: 0.5px solid gray; */
+}
+
+.service i{
+ margin-top: 200px;
+}
+.service a{
+  width: 310px;
+  height: 50px;
+  /* border:solid; */
+}
+/* table分界线 */
+.service1{
+  border-collapse: collapse;
+  font-size: 12px;
+  width:800px;
+  height:252px;
+
+  text-align: center;
+  /* height: */
+}
+.service1 tr:first-child{
+  font-size: 14px;
+  height:50px
+}
+.service1 td{
+  margin-left:-100px;
+}
+table a{
+  color:black;
+}
+table a:hover{
+  color:orange;
+}
+.service2{
+  position:absolute;
+  right:100px;
+  top:0px;
+  height:200px;
+  text-align: center;
+}
+.information{
+  width:1240px;
+  margin:auto;
+  position:relative;
+}
+/* @import "common.scss"; */

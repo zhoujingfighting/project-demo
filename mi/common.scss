@@ -1,0 +1,49 @@
+
+// p{
+    
+//     font-size: 12px;
+// }
+.information{
+<<<<<<< HEAD
+=======
+    pointer-events: none;
+>>>>>>> 80c5a1b022aa996cb1374dca3c9f4556ab152049
+     margin-top:30px;
+     margin-bottom: 30px;;
+    >div.logoimg{
+        width:57px;
+        height:187px;
+        position:absolute;
+        top:0;
+        left:0;
+        img{
+            width:57px;
+            height:57px;
+            position: absolute;
+            top:0;
+            left:0
+        }
+    }
+    >div.wenzi{
+        height:91;
+        width:1183px;
+        position: absolute;
+        right:0;
+        top:0;
+        p{
+            font-size: 12px;
+        }
+    }
+}
+.footer{
+    position: absolute;
+    bottom:-200px;
+    right:400px;
+    color:rgb(51,51,51);
+    // background-image: url(https://cdn.cnbj1.fds.api.mi-img.com/staticsfile/global/slogan2020.png);
+    letter-spacing: 0.2em;
+    color: rgba(#e5e5e5);;
+}
+.video{
+    color: #e5e5e5;
+}
