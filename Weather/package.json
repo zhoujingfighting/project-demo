@@ -1,0 +1,20 @@
+{
+  "name": "node-proxy",
+  "main": "main.js",
+  "scripts": {
+    "dev" :"vite"
+  },
+  "dependencies": {
+    "body-parser": "~1.0.1",
+    "ejs": "*",
+    "express": "~4.0.0",
+    "formidable": "*",
+    "mongoose": "~3.6.13",
+    "mysql": "*",
+    "redis": "*",
+    "vite": "^2.0.5"
+  },
+  "devDependencies": {
+    "request": "^2.74.0"
+  }
+}

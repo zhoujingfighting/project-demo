@@ -1,0 +1,206 @@
+@font-face {
+    font-family: 'iconfont';  /* project id 2362022 */
+    src: url('//at.alicdn.com/t/font_2362022_myjji7dp96.eot');
+    src: url('//at.alicdn.com/t/font_2362022_myjji7dp96.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_2362022_myjji7dp96.woff2') format('woff2'),
+    url('//at.alicdn.com/t/font_2362022_myjji7dp96.woff') format('woff'),
+    url('//at.alicdn.com/t/font_2362022_myjji7dp96.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_2362022_myjji7dp96.svg#iconfont') format('svg');
+  }
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:16px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+/* 引用阿里爸爸矢量图库 */
+.clear::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:1000px;
+    height:1000px;
+    /* border:solid; */
+    margin-left:25%;
+    background-color: #424242;
+}
+
+.container{
+    position: absolute;
+    font-size:1.2rem;
+    width:700px;
+    height:500px;
+    /* border:solid; */
+    border-radius: 50px 0 0 50px;
+    box-shadow: 0 0 70px -10px rgba(0, 0, 0, 0.2);
+    color: #ffffff;
+}
+.whether-container{
+    position: absolute;;
+    width:300px;
+    height:100%;
+    /* border:solid; */
+    box-shadow: 0 0 35px -10px rgba(0, 0, 0, 0.2);
+    color:white;
+}
+.city-whether{
+    position: absolute;
+    left:30px
+}
+.city-whether span{
+    display: block;
+    margin-top:-15px;
+}
+.background{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(135deg, #72EDF1 10%, #5151E6 100%);
+    border-radius: 50px 0 0 50px;
+    left:0;
+    top:0;
+    opacity: 0.8;
+}
+.whether{
+    position: absolute;
+    bottom: 30px;
+    left:50px;
+}
+.whether .temp{
+    font-size: 3rem;
+    position: absolute;
+    bottom: 30px;
+    left:0;
+}
+.whether i{
+    font-size: 5rem;
+    position: absolute;
+    bottom: 110px;
+    left:20px;
+}
+.dataside{
+    width:400px;
+    height:100%;
+    position: absolute;
+    right:0;
+    /* border:2px solid; */
+    background-color:#232833;
+    border-radius: 0 50px 50px 0;
+}
+.detail{
+    margin-top:30px;
+    display: block;
+    font-size:1rem;
+}
+/* #232833 */
+.today-data{
+    position: relative;
+    padding: 0;
+    margin: 40px auto;
+    width:80%;
+    height:100px;
+    flex-grow: row reverse;
+    /* border:solid; */
+    box-shadow: 0 0 50px -5px rgba(0, 0, 0, 0.4);
+}
+.today-data div span:nth-of-type(1){
+    display: inline-table;
+    position: absolute;
+    left: 20px;
+}
+.today-data div span:nth-of-type(2){
+    display: inline-table;
+    position: absolute;
+    right: 20px;
+}
+.PM-data{
+    width:100%;
+    height:33.33px;
+    line-height: 33.33px;
+}
+.temp-data{
+    width:100%;
+    height:33.33px;
+    line-height: 33.33px;
+    
+}
+.wind-data{
+    width:100%;
+    height:33.33px;
+    line-height: 33.33px;
+}
+.nextweeekdata{
+    position: relative;
+    width: 400px;
+    height:100px;
+    /* border:solid; */
+}
+.info-ul{
+    position: absolute;
+    left:40px;
+    top:-20px;
+    width:90%;
+    height:100%;
+    padding: 0;
+    /* border:solid; */
+}
+.info-ul li{
+    position: relative;
+    display: inline-block;
+    height:100%;
+    width:20%;
+    margin:0 3px;
+    /* border:solid; */
+    border-radius:10px;
+}
+.info-ul li:hover{
+    background-color: white;
+    scale: 1.1;
+}
+.info-ul li:hover span{
+    /* z-index: 33; */
+    color: black;
+}
+.info-ul li span{
+    position: relative;
+    text-align: center;
+    display: block;
+    height: 30;
+    margin:5px;
+}
+.info-ul li .iconfont{
+    font-size:2rem
+}
+.info-ul li .day-temp{
+    font-size:0.85rem
+}
+.search{
+    width: 400px;
+    height: 100px;
+    position: relative;
+    top:30px;
+    left:40px;
+}
+.search input{
+    display: block;
+    width: 320px;
+    height: 24px;
+    border-radius: 8px;
+}
+.search button{
+    margin-top:30px;
+    display: block;
+    width: 340px;
+    height: 34px;
+    margin-left:-5px;
+    border-radius: 8px;
+    background-image: linear-gradient(135deg, #72EDF1 10%, #5151E6 100%);
+    font-size:1.2rem;
+    color:white;
+}
