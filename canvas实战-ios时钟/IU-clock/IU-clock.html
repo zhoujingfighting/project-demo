@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>好看的时钟</title>
+    <link rel="stylesheet" href="IU-clock.css">
+    <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+    <div id = "getTime" style = "height:300px;width:900px;margin-left:auto;margin-right:auto;margin-bottom:-350px;font-size:40px;color:pink;">
+
+
+    </div>
+
+    <section>
+        <span class="iu">IU Clock</span>    
+        <div class="zj"></div>
+        <div class="total">
+        <span>3</span>
+        <span>6</span>
+        <span>9</span>
+        <span>12</span>
+        <i class="fa fa-cog fa-2x" aria-hidden="true"></i>
+        <div class="seconds"><div class="second1"></div></div>
+        <div class="minute"></div>
+        <div class="hour"></div>
+        <!-- 分割线 -->
+        <div> <br><span style = "display:block; color:hotpink;margin-left:-4px;font-size:20px;">1</span> </div>
+        <div> <br><span style = "display:block; color:hotpink;margin-left:-4px;font-size:20px;">2 </div>
+        <div> <br><span style = "display:block; color:hotpink;margin-left:-4px;font-size:20px;">4 </div>
+        <div> <br><span style = "display:block; color:hotpink;margin-left:-4px;font-size:20px;">5 </div>
+        <div> <br><span style = "display:block; color:hotpink;margin-left:-4px;font-size:20px;">7 </div>
+        <div> <br><span style = "display:block; color:hotpink;margin-left:-4px;font-size:20px;">8 </div>
+        <div> <br><span style = "display:block; color:hotpink;margin-left:-12px;font-size:20px;">10 </div>
+        <div> <br><span style = "display:block; color:hotpink;margin-left:-12px;font-size:20px;">11 </div>
+    </div>
+</section>
+<script>
+    window.onload = function(){
+        setInterval("nowtime()", 1000);//每隔一秒刷新
+    }
+    var second = document.querySelector('.seconds')
+        var hour = document.querySelector('.hour')
+        var minute = document.querySelector('.minute')
+        second.style.animationDelay = '-' + new Date().getSeconds() + 's'
+        minute.style.animationDelay = '-' + (new Date().getMinutes() * 60 + new Date().getSeconds()) + 's'
+        hour.style.animationDelay = '-' + (new Date().getMinutes() * 60 + new Date().getSeconds()  + new Date().getHours() *3600) + 's'
+        
+        // setTimeout(() => {
+        //   var d = new Date()
+        //   second.style.animationDelay = '-' + d.getSeconds() + 's'
+        //   minute.style.animationDelay = '-' + (new Date().getMinutes() * 60 + new Date().getSeconds()) + 's'
+        //   hour.style.animationDelay = '-' + (new Date().getMinutes() * 60 + new Date().getSeconds()  + new Date().getHours() *3600) + 's'
+        // }, 1000 - Date.now() % 1000) 
+        // requestAnimationFrame( function e(){
+        //      var a = new Date()
+        //      document.body.appendChild(document.createTextNode(a))
+        //      document.body.remove(a)
+        // })
+        function nowtime(){
+            var day = new Date()
+            var d = day.getDate()
+            var month = day.getMonth() + 1
+            var year = day.getFullYear()//年月日
+            var h = day.getHours()
+            var m = day.getMinutes()
+            var s = day.getSeconds()//获得时间
+            //还的判断数字书不是小于10
+            document.getElementById("getTime").innerHTML="当前时间："+check(year)+"年"+check(month)+"月"+check(d)+"日  "+check(h)+":"+check(m)+":"+check(s);
+        }
+        function check(i){
+            return i < 10?"0"+i:i
+        }
+
+    </script>
+</body>
+</html>
