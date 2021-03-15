@@ -1,5 +1,5 @@
 
-const city = '北京';
+const city = '杭州';
 const button = document.getElementById("button")
 const input = document.getElementById("input")
 var option = {
@@ -43,7 +43,7 @@ function choseFont(str){
         return "&#xe613;";
     }
     else{
-        return "&#xe618;";
+        return "&#xe62f;";
     }     
   }
 // tianqiData.cityname = decodeURI(encodeURI(tianqiData.cityname));
