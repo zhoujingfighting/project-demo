@@ -13,3 +13,6 @@
 
 - 所有文件加载完毕过后,直接点击index.html,就可以看到运行结果
 
+### canvas,iu时钟 , simpercounter
+- 下载完直接点击html文件就可运行
+
