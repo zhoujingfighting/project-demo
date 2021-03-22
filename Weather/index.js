@@ -28,22 +28,31 @@ function choseFont(str){
     //03:阵雨
     //04:雷电
     if(str=="01"){
-        return "&#xe605;";
+        return "&#xe62f;";
     }
-    if(str=="00"){
-        return "&#xe605;";
-    }
-    if(str=="02"){
-        return "&#xe624;"
-    }
-    if(str=="03"){
+    else if(str=="00"){
         return "&#xe613;";
     }
-    if(str=="04"){
-        return "&#xe613;";
+    else if(str=="02"){
+        return "&#xe614;"
+    }
+    else if(str=="03"){
+        return "&#xe617;";
+    }
+    else if(str=="04"){
+        return "&#xe61b;";
+    }
+    else if(str=="05"){
+        return "&#xe61c;";
+    }
+    else if(str=="06"){
+        return "&#xe616;";
+    }
+    else if(str=="07"){
+        return "&#xe61d;";
     }
     else{
-        return "&#xe62f;";
+        return "&#xe615;";
     }     
   }
 // tianqiData.cityname = decodeURI(encodeURI(tianqiData.cityname));
